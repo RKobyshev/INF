@@ -1,4 +1,5 @@
-f = open("f1").read()
+
+f = open("f1", encoding='utf-8').read()
 s = "аеиоуыэюя"
 for i in range(1, len(f)-1):
     if f[i-1] not in s and f[i] in s:
